@@ -1,0 +1,25 @@
+.container {
+    position: relative;
+    width: 100%; /* Ou mets une largeur spécifique */
+    max-width: 800px; /* Ajuste selon ton image */
+    margin: auto; /* Centre le cadre */
+}
+
+.cadre {
+    width: 100%; /* Ajuste l'image à la largeur du container */
+    height: auto;
+    display: block;
+    position: relative;
+    z-index: 2; /* Le cadre passe au-dessus */
+    pointer-events: none; /* Permet de cliquer sur la vidéo */
+}
+
+iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%; /* Ajuste la taille de la vidéo */
+    height: 100%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* La vidéo est sous l'image */
+}
