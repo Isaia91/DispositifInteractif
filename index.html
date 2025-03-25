@@ -1,17 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <title>Bannian NC</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="container">
-    <img src="assets/img/cadreTropical.png" class="cadre">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/gRcQRT-ZoO8?si=fQDTPa0PmbgM5NU1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<!-- Modal pour la vidéo locale (cachée par défaut) -->
+<div id="video-modal-overlay" class="modal-overlay">
+    <div class="modal-content">
+        <!-- Cadre graphique au-dessus de la vidéo -->
+        <img src="assets/img/cadreTropical.png" class="cadre" alt="Cadre tropical">
+        <!-- Vidéo locale avec lecture automatique et en boucle -->
+        <video class="modal-video" controls autoplay loop muted>
+            <source src="assets/video/pilou.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas la balise vidéo.
+        </video>
+    </div>
 </div>
 
-
+<!-- Contenu principal de la page -->
+<div class="content">
+    <div class="sun"></div>
+    <div class="cloud cloud1"></div>
+    <div class="cloud cloud2"></div>
+    <div class="cloud cloud3"></div>
+    <div class="banian">
+        <!-- Bouton déclencheur d'ouverture de la modal -->
+        <button id="btn-open-modal">
+            <img src="assets/img/banian2.png" alt="Ouvrir la vidéo">
+        </button>
+    </div>
+</div>
 
 <script src="javascript/script.js"></script>
 </body>
