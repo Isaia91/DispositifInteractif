@@ -7,28 +7,33 @@
 </head>
 <body>
 <!-- Modal pour la vidéo locale (cachée par défaut) -->
-<div id="video-modal-overlay" class="modal-overlay">
-    <div class="modal-content">
-        <!-- Cadre graphique au-dessus de la vidéo -->
-        <img src="assets/img/cadreTropical.png" class="cadre" alt="Cadre tropical">
-        <!-- Vidéo locale avec lecture automatique et en boucle -->
-        <video class="modal-video" controls autoplay loop muted>
-            <source src="assets/video/pilou.mp4" type="video/mp4">
-            Votre navigateur ne supporte pas la balise vidéo.
-        </video>
+<div id="video-modal" class="modal-overlay">
+    <div class="modal-box">
+        <h2 class="modal-title">Le pilou</h2>
+        <div class="modal-body">
+            <video class="modal-video" controls autoplay loop muted>
+                <source src="assets/video/pilou.mp4" type="video/mp4">
+                Votre navigateur ne supporte pas la balise vidéo.
+            </video>
+            <p class="modal-description">
+                It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout.
+                The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
+                to using 'Content here, content here', making it look like readable English.
+                Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.
+            </p>
+        </div>
     </div>
 </div>
+
 
 <!-- Contenu principal de la page -->
 <div class="content">
     <div class="sun"></div>
-    <div class="cloud cloud1"></div>
-    <div class="cloud cloud2"></div>
-    <div class="cloud cloud3"></div>
     <div class="banian">
         <!-- Bouton déclencheur d'ouverture de la modal -->
         <button id="btn-open-modal">
-            <img src="assets/img/banian2.png" alt="Ouvrir la vidéo">
+            <img src="assets/img/banian3.png" alt="Ouvrir la vidéo">
         </button>
     </div>
 </div>
