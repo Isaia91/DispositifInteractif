@@ -9,3 +9,6 @@ permettra également aux visiteurs de déclencher une danse traditionnelle effec
 personnages apparaissant de derrière le banian. En outre, l'exposition comprendra des
 animaux locaux de Nouvelle-Calédonie, sur l'herbe projetée, tels que le cagou et la roussette s,
 ainsi que des illustrations de monuments calédoniens, grâce à des mapping vidéo.
+
+Link : 
+https://isaia91.github.io/DispositifInteractif/
