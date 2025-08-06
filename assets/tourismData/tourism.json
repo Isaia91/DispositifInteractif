@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "nom": "Tarap destination",
+    "description": "Dans la paisible commune de Ouégoa se cache une histoire peu ordinaire. Richard Martin, dit Ricky, vous promet une échappée belle dont vous vous souviendrez.",
+    "image": "assets/img/destinations/tarap.jpg",
+    "type": "Gite",
+    "localisation": "Ouegoa"
+  },
+  {
+    "id": 2,
+    "nom": "Village de Prony",
+    "description": "Ce village côtier du Grand Sud témoigne de l'histoire du Bagne de Nouvelle-Calédonie. Fondé en 1867 pour ravitailler Nouméa en bois, il se transforme dès 1873 en pénitencier, avant de servir de base aux travailleurs venus exploiter la mine de fer, jusqu'en 1968. Le site, resté à l'abandon de 1968 à 1990, doit sa restauration à l'Association du Village de Prony. Grâce à son travail de conservation, vous pourrez voir certains bâtiments emprisonnés dans les racines d'immenses banians. De l'ancien camp Sébert, restent aujourd'hui l'ancien four à pain, la poudrière, le traîneau pour le transport du bois, le logement des officiers... Régulièrement, des visites organisées par un guide du patrimoine permettent de plonger au cœur de la mémoire de ce lieu dont la magie reste vivace malgré les aléas du temps qui passe.\n\n\nOn peut encore y croiser des chasseurs de trésors puisqu’on raconte qu’un forçat heureux aux jeux y mourut sans divulguer la cachette de son butin située quelque part dans le village.",
+    "image": "assets/img/destinations/prony.webp",
+    "type": "Nature/Visite",
+    "localisation": "Mont-Dore"
+  },
+  {
+    "id": 3,
+    "nom": "Parc de la Rivière Bleue",
+    "description": "Parc provincial offrant une faune et une flore uniques, avec des sentiers de randonnée, des cagous et un pont suspendu.",
+    "image": "assets/img/destinations/rivierebleu.jpg",
+    "type": "Randonnée",
+    "localisation": "Grand sud"
+  },
+  {
+    "id": 4,
+    "nom": "Grottes de Koumac ",
+    "description": "Le site des Grottes de Koumac est public, en accès libre et gratuit. Les transports publics n’allant pas jusque-là, il vous faudra vous y rendre en voiture personnelle, à moins que vous n’ayez opté pour un tour guidé personnalisé. Depuis le centre de la commune de Koumac au nord-ouest de la Grande Terre, comptez 8 km. Si vous arrivez du sud, il vous faudra prendre la première sortie au rond-point de l’église, puis encore à droite une fois que vous êtes sur l’avenue Georges Baudoux. ",
+    "image": "assets/img/destinations/Koumac.jpg",
+    "type": "Visite",
+    "localisation": "Koumac"
+  },
+  {
+    "id": 5,
+    "nom": "Plage de Mouli",
+    "description": "La plage de Mouli s’étend sur plus de 6 kilomètres sur la côte sous le vent de l’île de Mouli, reliée à l’île principale par le pont de Mouli.",
+    "image": "assets/img/destinations/mouli.jpg",
+    "type": "Snorkeling/Détente",
+    "localisation": "Ouvea"
+  },
+  {
+    "id": 6,
+    "nom": "Plateau de Tia",
+    "description": "Situé à l'entrée de Pouembout, le plateau de Tia offre des points de vue et des panoramas sur la zone Pouembout et Koné.",
+    "image": "assets/img/destinations/tia.webp",
+    "type": "Randonnée/Marche",
+    "localisation": "Pouembout"
+  }
+]

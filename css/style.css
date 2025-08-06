@@ -174,3 +174,50 @@ body {
     line-height: 1.6;
     color: #f1f1f1;
 }
+
+/* Position fixe dans le coin bas droit */
+.dice-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 80px;
+    height: 80px;
+    perspective: 600px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+/* Le dé lui-même */
+.dice {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(0deg);
+    transition: transform 1s;
+}
+
+/* Faces du dé */
+.face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.face.one   { transform: rotateY(0deg) translateZ(40px); background-image: url("../assets/img/dice/textures/dice1.png"); }
+.face.two   { transform: rotateY(180deg) translateZ(40px); background-image: url("../assets/img/dice/textures/dice2.png"); }
+.face.three { transform: rotateY(90deg) translateZ(40px); background-image: url("../assets/img/dice/textures/dice3.png"); }
+.face.four  { transform: rotateY(-90deg) translateZ(40px); background-image: url("../assets/img/dice/textures/dice4.png"); }
+.face.five  { transform: rotateX(90deg) translateZ(40px); background-image: url("../assets/img/dice/textures/dice5.png"); }
+.face.six   { transform: rotateX(-90deg) translateZ(40px); background-image: url("../assets/img/dice/textures/dice6.png"); }
+
+#tourism-image {
+    max-height: 300px;
+    object-fit: cover;
+}

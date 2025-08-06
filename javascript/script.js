@@ -112,3 +112,52 @@
 
      sky.appendChild(cloud);
  }
+
+// Rotation aléatoire pour simuler un lancer de dé
+const dice = document.getElementById('dice');
+
+dice.addEventListener('click', () => {
+    const randX = Math.floor(Math.random() * 4) * 90;
+    const randY = Math.floor(Math.random() * 4) * 90;
+    dice.style.transform = `rotateX(${randX}deg) rotateY(${randY}deg)`;
+});
+
+const tourismModal = document.getElementById('tourism-modal');
+const tourismTitle = document.getElementById('tourism-title');
+const tourismImage = document.getElementById('tourism-image');
+const tourismDescription = document.getElementById('tourism-description');
+
+// Charger les données JSON une fois
+let tourismData = [];
+
+fetch('assets/tourismData/tourism.json')
+    .then(res => res.json())
+    .then(data => {
+        tourismData = data;
+    })
+    .catch(err => console.error('Erreur chargement JSON :', err));
+
+// Lancer le dé et afficher une destination
+dice.addEventListener('click', () => {
+    const randX = Math.floor(Math.random() * 4) * 90;
+    const randY = Math.floor(Math.random() * 4) * 90;
+    dice.style.transform = `rotateX(${randX}deg) rotateY(${randY}deg)`;
+
+    if (tourismData.length > 0) {
+        const randomIndex = Math.floor(Math.random() * tourismData.length);
+        const destination = tourismData[randomIndex];
+
+        tourismTitle.textContent = destination.nom;
+        tourismImage.src = destination.image;
+        tourismDescription.textContent = destination.description;
+
+        tourismModal.style.display = "flex";
+    }
+});
+
+// Fermer la modale si on clique dehors
+tourismModal.addEventListener("click", function (event) {
+    if (event.target === tourismModal) {
+        tourismModal.style.display = "none";
+    }
+});
