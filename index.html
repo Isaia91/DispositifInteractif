@@ -11,17 +11,13 @@
     <div class="modal-box">
         <h2 class="modal-title">Le pilou</h2>
         <div class="modal-body">
-            <video class="modal-video" controls autoplay loop muted>
+            <div class="video-with-frame">
+                <video class="video-framed" controls autoplay loop muted>
                 <source src="assets/video/pilou.mp4" type="video/mp4">
-                Votre navigateur ne supporte pas la balise vidéo.
-            </video>
-            <p class="modal-description">
-                It is a long established fact that a reader will be distracted by the readable content of a page when
-                looking at its layout.
-                The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed
-                to using 'Content here, content here', making it look like readable English.
-                Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.
-            </p>
+                    Votre navigateur ne supporte pas la balise vidéo.
+                </video>
+                <img src="assets/img/cadreTropical.png" alt="Cadre tropical" class="video-frame-overlay">
+            </div>
         </div>
     </div>
 </div>
@@ -42,7 +38,7 @@
         <div class="modal-box">
             <h2 id="tourism-title" class="modal-title">Destination</h2>
             <div class="modal-body">
-                <img id="tourism-image" class="modal-video" src="" alt="Destination">
+                <img id="tourism-image" class="tourism-image" src="" alt="Destination">
                 <p id="tourism-description" class="modal-description">Description ici...</p>
             </div>
         </div>
