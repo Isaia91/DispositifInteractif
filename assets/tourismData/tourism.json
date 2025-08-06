@@ -2,7 +2,7 @@
   {
     "id": 1,
     "nom": "Tarap destination",
-    "description": "Dans la paisible commune de Ouégoa se cache une histoire peu ordinaire. Richard Martin, dit Ricky, vous promet une échappée belle dont vous vous souviendrez.",
+    "description": "À Ouégoa, Richard Martin, surnommé Ricky, vous invite à découvrir un coin paisible de la Nouvelle-Calédonie. Lieu de détente et d’évasion, ce gîte offre une escapade authentique, entre nature généreuse et ambiance chaleureuse.",
     "image": "assets/img/destinations/tarap.jpg",
     "type": "Gite",
     "localisation": "Ouegoa"
@@ -10,7 +10,7 @@
   {
     "id": 2,
     "nom": "Village de Prony",
-    "description": "Ce village côtier du Grand Sud témoigne de l'histoire du Bagne de Nouvelle-Calédonie. Fondé en 1867 pour ravitailler Nouméa en bois, il se transforme dès 1873 en pénitencier, avant de servir de base aux travailleurs venus exploiter la mine de fer, jusqu'en 1968. Le site, resté à l'abandon de 1968 à 1990, doit sa restauration à l'Association du Village de Prony. Grâce à son travail de conservation, vous pourrez voir certains bâtiments emprisonnés dans les racines d'immenses banians. De l'ancien camp Sébert, restent aujourd'hui l'ancien four à pain, la poudrière, le traîneau pour le transport du bois, le logement des officiers... Régulièrement, des visites organisées par un guide du patrimoine permettent de plonger au cœur de la mémoire de ce lieu dont la magie reste vivace malgré les aléas du temps qui passe.\n\n\nOn peut encore y croiser des chasseurs de trésors puisqu’on raconte qu’un forçat heureux aux jeux y mourut sans divulguer la cachette de son butin située quelque part dans le village.",
+    "description": "Ancien pénitencier du Grand Sud, le village de Prony est un site chargé d'histoire. Niché parmi les banians, il dévoile ses vestiges : poudrière, four à pain, traîneaux en bois. Des visites guidées vous font revivre son passé minier et carcéral, et une mystérieuse légende de trésor le rend encore plus fascinant.",
     "image": "assets/img/destinations/prony.webp",
     "type": "Nature/Visite",
     "localisation": "Mont-Dore"
@@ -18,15 +18,15 @@
   {
     "id": 3,
     "nom": "Parc de la Rivière Bleue",
-    "description": "Parc provincial offrant une faune et une flore uniques, avec des sentiers de randonnée, des cagous et un pont suspendu.",
+    "description": "Véritable joyau de la biodiversité calédonienne, le parc abrite des cagous en liberté, une végétation dense et un pont suspendu emblématique. Randonneurs et amoureux de la nature y trouvent un terrain de découverte idéal.",
     "image": "assets/img/destinations/rivierebleu.jpg",
     "type": "Randonnée",
     "localisation": "Grand sud"
   },
   {
     "id": 4,
-    "nom": "Grottes de Koumac ",
-    "description": "Le site des Grottes de Koumac est public, en accès libre et gratuit. Les transports publics n’allant pas jusque-là, il vous faudra vous y rendre en voiture personnelle, à moins que vous n’ayez opté pour un tour guidé personnalisé. Depuis le centre de la commune de Koumac au nord-ouest de la Grande Terre, comptez 8 km. Si vous arrivez du sud, il vous faudra prendre la première sortie au rond-point de l’église, puis encore à droite une fois que vous êtes sur l’avenue Georges Baudoux. ",
+    "nom": "Grottes de Koumac",
+    "description": "À 8 km du centre de Koumac, ce site naturel en accès libre offre un décor spectaculaire. Les grottes, creusées dans la roche calcaire, sont facilement accessibles en voiture et promettent une belle exploration au nord de la Grande Terre.",
     "image": "assets/img/destinations/Koumac.jpg",
     "type": "Visite",
     "localisation": "Koumac"
@@ -34,7 +34,7 @@
   {
     "id": 5,
     "nom": "Plage de Mouli",
-    "description": "La plage de Mouli s’étend sur plus de 6 kilomètres sur la côte sous le vent de l’île de Mouli, reliée à l’île principale par le pont de Mouli.",
+    "description": "Située sur l'île de Mouli, cette plage de sable blanc offre des eaux turquoise idéales pour le snorkeling. Le pont de Mouli vous mène à ce petit coin de paradis, apprécié pour sa tranquillité et sa beauté sauvage.",
     "image": "assets/img/destinations/mouli.jpg",
     "type": "Snorkeling/Détente",
     "localisation": "Ouvea"
@@ -42,7 +42,7 @@
   {
     "id": 6,
     "nom": "Plateau de Tia",
-    "description": "Situé à l'entrée de Pouembout, le plateau de Tia offre des points de vue et des panoramas sur la zone Pouembout et Koné.",
+    "description": "À l’entrée de Pouembout, le plateau de Tia surplombe la région et offre des vues imprenables sur les plaines environnantes. Accessible à pied, c’est un lieu de promenade apprécié des habitants comme des visiteurs.",
     "image": "assets/img/destinations/tia.webp",
     "type": "Randonnée/Marche",
     "localisation": "Pouembout"

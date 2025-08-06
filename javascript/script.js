@@ -113,23 +113,16 @@
      sky.appendChild(cloud);
  }
 
-// Rotation aléatoire pour simuler un lancer de dé
+// Récupération du DOM pour la modale tourisme
 const dice = document.getElementById('dice');
-
-dice.addEventListener('click', () => {
-    const randX = Math.floor(Math.random() * 4) * 90;
-    const randY = Math.floor(Math.random() * 4) * 90;
-    dice.style.transform = `rotateX(${randX}deg) rotateY(${randY}deg)`;
-});
-
 const tourismModal = document.getElementById('tourism-modal');
 const tourismTitle = document.getElementById('tourism-title');
 const tourismImage = document.getElementById('tourism-image');
 const tourismDescription = document.getElementById('tourism-description');
 
-// Charger les données JSON une fois
 let tourismData = [];
 
+// Chargement des données JSON
 fetch('assets/tourismData/tourism.json')
     .then(res => res.json())
     .then(data => {
@@ -137,25 +130,34 @@ fetch('assets/tourismData/tourism.json')
     })
     .catch(err => console.error('Erreur chargement JSON :', err));
 
-// Lancer le dé et afficher une destination
+// Correspondance faces ↔ rotations
+const diceFaces = [
+    { x: 0,   y: 0   },  // Face 1
+    { x: 0,   y: 180 },  // Face 2
+    { x: 0,   y: 90  },  // Face 3
+    { x: 0,   y: -90 },  // Face 4
+    { x: 90,  y: 0   },  // Face 5
+    { x: -90, y: 0   }   // Face 6
+];
+
+// Lancer du dé + affichage modale
 dice.addEventListener('click', () => {
-    const randX = Math.floor(Math.random() * 4) * 90;
-    const randY = Math.floor(Math.random() * 4) * 90;
-    dice.style.transform = `rotateX(${randX}deg) rotateY(${randY}deg)`;
+    const faceIndex = Math.floor(Math.random() * 6);
+    const rotation = diceFaces[faceIndex];
+    dice.style.transform = `rotateX(${rotation.x}deg) rotateY(${rotation.y}deg)`;
 
-    if (tourismData.length > 0) {
-        const randomIndex = Math.floor(Math.random() * tourismData.length);
-        const destination = tourismData[randomIndex];
-
-        tourismTitle.textContent = destination.nom;
-        tourismImage.src = destination.image;
-        tourismDescription.textContent = destination.description;
-
-        tourismModal.style.display = "flex";
-    }
+    setTimeout(() => {
+        if (tourismData.length === 6) {
+            const destination = tourismData[faceIndex];
+            tourismTitle.textContent = destination.nom;
+            tourismImage.src = destination.image;
+            tourismDescription.textContent = destination.description;
+            tourismModal.style.display = "flex";
+        }
+    }, 1000); // délai d’affichage pour laisser le temps au dé de tourner
 });
 
-// Fermer la modale si on clique dehors
+// Fermer la modale quand on clique dehors
 tourismModal.addEventListener("click", function (event) {
     if (event.target === tourismModal) {
         tourismModal.style.display = "none";
