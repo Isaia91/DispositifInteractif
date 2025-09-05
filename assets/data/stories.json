@@ -1,0 +1,88 @@
+{
+  "stories": [
+    {
+      "id": "mouakene",
+      "title": "Mouakene",
+      "audio": "assets/audio/moakene.mp3",
+      "images": [
+        "assets/img/conte/mouakene/1.png",
+        "assets/img/conte/mouakene/2.png",
+        "assets/img/conte/mouakene/3.png",
+        "assets/img/conte/mouakene/4.png",
+        "assets/img/conte/mouakene/5.png",
+        "assets/img/conte/mouakene/6.png"
+      ],
+      "intervalMs": 11000
+    },
+    {
+      "id": "ratpoulpe",
+      "title": "Le rat et le Poulpe",
+      "audio": "assets/audio/rat-poulpe.mp3",
+      "images": [
+        "assets/img/conte/ratpoulpe/1.png",
+        "assets/img/conte/ratpoulpe/2.png",
+        "assets/img/conte/ratpoulpe/3.png",
+        "assets/img/conte/ratpoulpe/4.png",
+        "assets/img/conte/ratpoulpe/5.png",
+        "assets/img/conte/ratpoulpe/6.png"
+      ],
+      "intervalMs": 11000
+    },
+    {
+      "id": "gutinic",
+      "title": "Gutinic",
+      "audio": "assets/audio/gutinic.mp3",
+      "images": [
+        "assets/img/conte/mouakene/1.png",
+        "assets/img/conte/mouakene/2.png",
+        "assets/img/conte/mouakene/3.png",
+        "assets/img/conte/mouakene/4.png",
+        "assets/img/conte/mouakene/5.png",
+        "assets/img/conte/mouakene/6.png"
+      ],
+      "intervalMs": 5000
+    },
+    {
+      "id": "histoire4",
+      "title": "Histoire 4",
+      "audio": "assets/audio/moakene.mp3",
+      "images": [
+        "assets/img/conte/mouakene/1.png",
+        "assets/img/conte/mouakene/2.png",
+        "assets/img/conte/mouakene/3.png",
+        "assets/img/conte/mouakene/4.png",
+        "assets/img/conte/mouakene/5.png",
+        "assets/img/conte/mouakene/6.png"
+      ],
+      "intervalMs": 5000
+    },
+    {
+      "id": "histoire5",
+      "title": "Histoire 5",
+      "audio": "assets/audio/moakene.mp3",
+      "images": [
+        "assets/img/conte/mouakene/1.png",
+        "assets/img/conte/mouakene/2.png",
+        "assets/img/conte/mouakene/3.png",
+        "assets/img/conte/mouakene/4.png",
+        "assets/img/conte/mouakene/5.png",
+        "assets/img/conte/mouakene/6.png"
+      ],
+      "intervalMs": 5000
+    },
+    {
+      "id": "histoire6",
+      "title": "Histoire 6",
+      "audio": "assets/audio/moakene.mp3",
+      "images": [
+        "assets/img/conte/mouakene/1.png",
+        "assets/img/conte/mouakene/2.png",
+        "assets/img/conte/mouakene/3.png",
+        "assets/img/conte/mouakene/4.png",
+        "assets/img/conte/mouakene/5.png",
+        "assets/img/conte/mouakene/6.png"
+      ],
+      "intervalMs": 5000
+    }
+  ]
+}
