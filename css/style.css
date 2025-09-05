@@ -209,9 +209,9 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border: 2px solid #ccc;
+    border: 2px solid #000;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 22px rgba(255, 255, 255, 0.35);
 }
 
 .face.one {
@@ -337,5 +337,45 @@ body {
 @media (prefers-reduced-motion: reduce) {
     .modal-overlay, .modal-content, #story-image {
         transition: none !important;
+    }
+}
+
+.dice-sign {
+    position: fixed;
+    bottom: 110px; /* juste au-dessus du dé (dé = 80px + 20px de marge) */
+    right: 20px;
+    max-width: 280px;
+    padding: 10px 14px;
+    border-radius: 10px;
+
+    /* Style lisible sur ton fond sombre */
+    background: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+
+    box-shadow: 0 8px 22px rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(2px) saturate(115%);
+
+    z-index: 1001; /* au-dessus du dé (z-index:1000) */
+    pointer-events: none; /* n'empêche pas de cliquer le dé */
+    transform: translateZ(0);
+    animation: diceSignFloat 3s ease-in-out infinite;
+}
+
+@keyframes diceSignFloat {
+    0%, 100% {
+        transform: translateY(0) translateZ(0);
+    }
+    50% {
+        transform: translateY(-3px) translateZ(0);
+    }
+}
+
+/* Respect des préférences d'animation */
+@media (prefers-reduced-motion: reduce) {
+    .dice-sign {
+        animation: none;
     }
 }
