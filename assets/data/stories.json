@@ -33,33 +33,33 @@
       "title": "Gutinic",
       "audio": "assets/audio/gutinic.mp3",
       "images": [
-        "assets/img/conte/mouakene/1.png",
-        "assets/img/conte/mouakene/2.png",
-        "assets/img/conte/mouakene/3.png",
-        "assets/img/conte/mouakene/4.png",
-        "assets/img/conte/mouakene/5.png",
-        "assets/img/conte/mouakene/6.png"
+        "assets/img/conte/gutinic/1.png",
+        "assets/img/conte/gutinic/2.png",
+        "assets/img/conte/gutinic/3.png",
+        "assets/img/conte/gutinic/4.png",
+        "assets/img/conte/gutinic/5.png",
+        "assets/img/conte/gutinic/6.png"
       ],
-      "intervalMs": 5000
+      "intervalMs": 15833
     },
     {
       "id": "histoire4",
       "title": "Histoire 4",
-      "audio": "assets/audio/moakene.mp3",
+      "audio": "assets/audio/enfantigname.mp3",
       "images": [
-        "assets/img/conte/mouakene/1.png",
-        "assets/img/conte/mouakene/2.png",
-        "assets/img/conte/mouakene/3.png",
-        "assets/img/conte/mouakene/4.png",
-        "assets/img/conte/mouakene/5.png",
-        "assets/img/conte/mouakene/6.png"
+        "assets/img/conte/enfantigname/1.png",
+        "assets/img/conte/enfantigname/2.png",
+        "assets/img/conte/enfantigname/3.png",
+        "assets/img/conte/enfantigname/4.png",
+        "assets/img/conte/enfantigname/5.png",
+        "assets/img/conte/enfantigname/6.png"
       ],
-      "intervalMs": 5000
+      "intervalMs": 12600
     },
     {
       "id": "histoire5",
       "title": "Histoire 5",
-      "audio": "assets/audio/moakene.mp3",
+      "audio": "assets/audio/anguille.mp3",
       "images": [
         "assets/img/conte/mouakene/1.png",
         "assets/img/conte/mouakene/2.png",
@@ -73,7 +73,7 @@
     {
       "id": "histoire6",
       "title": "Histoire 6",
-      "audio": "assets/audio/moakene.mp3",
+      "audio": "assets/audio/creationnc.mp3",
       "images": [
         "assets/img/conte/mouakene/1.png",
         "assets/img/conte/mouakene/2.png",
