@@ -13,7 +13,7 @@
         <div class="modal-body">
             <div class="video-with-frame">
                 <video class="video-framed" controls autoplay loop muted>
-                <source src="assets/video/pilou.mp4" type="video/mp4">
+                    <source src="assets/video/pilou.mp4" type="video/mp4">
                     Votre navigateur ne supporte pas la balise vidéo.
                 </video>
                 <img src="assets/img/cadreTropical.png" alt="Cadre tropical" class="video-frame-overlay">
@@ -29,20 +29,21 @@
     <div class="banian">
         <!-- Bouton déclencheur d'ouverture de la modal -->
         <button id="btn-open-modal">
-            <img src="assets/img/banian3.png" alt="Ouvrir la vidéo">
+            <img src="assets/img/banian.png" alt="Ouvrir la vidéo">
         </button>
     </div>
 
-    <!-- Modal pour une destination touristique -->
-    <div id="tourism-modal" class="modal-overlay">
-        <div class="modal-box">
-            <h2 id="tourism-title" class="modal-title">Destination</h2>
-            <div class="modal-body">
-                <img id="tourism-image" class="tourism-image" src="" alt="Destination">
-                <p id="tourism-description" class="modal-description">Description ici...</p>
+    <!-- MODALE HISTOIRE -->
+    <div id="story-modal" class="modal-overlay" style="display:none;">
+        <div class="modal-content">
+            <div class="slideshow">
+                <img id="story-image" alt="Diaporama de l'histoire"/>
             </div>
         </div>
     </div>
+
+    <!-- Lecteur audio caché -->
+    <audio id="story-audio" preload="auto"></audio>
 
     <div class="dice-container">
         <div class="dice" id="dice">
@@ -55,9 +56,13 @@
         </div>
     </div>
 
+    <div class="dice-sign" role="note" aria-live="polite">
+        Lancez le dé pour écouter une histoire calédonienne
+    </div>
+
 
 </div>
 
-<script src="javascript/script.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

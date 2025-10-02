@@ -9,7 +9,7 @@ body {
 .content {
     width: 100%;
     height: 100%;
-    background-image: url('../assets/img/background3.png');
+    background-image: url('../assets/img/background.png');
     background-size: contain;
 }
 
@@ -39,8 +39,12 @@ body {
 }
 
 @keyframes twinkle {
-    0%, 100% { opacity: 0.8; }
-    50% { opacity: 0.2; }
+    0%, 100% {
+        opacity: 0.8;
+    }
+    50% {
+        opacity: 0.2;
+    }
 }
 
 /* Styles pour les nuages */
@@ -205,22 +209,41 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border: 2px solid #ccc;
+    border: 2px solid #000;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    box-shadow: 0 8px 22px rgba(255, 255, 255, 0.35);
 }
 
-.face.one   { transform: rotateY(0deg) translateZ(40px); background-image: url("../assets/img/dice/textures/dice1.png"); }
-.face.two   { transform: rotateY(180deg) translateZ(40px); background-image: url("../assets/img/dice/textures/dice2.png"); }
-.face.three { transform: rotateY(90deg) translateZ(40px); background-image: url("../assets/img/dice/textures/dice3.png"); }
-.face.four  { transform: rotateY(-90deg) translateZ(40px); background-image: url("../assets/img/dice/textures/dice4.png"); }
-.face.five  { transform: rotateX(90deg) translateZ(40px); background-image: url("../assets/img/dice/textures/dice5.png"); }
-.face.six   { transform: rotateX(-90deg) translateZ(40px); background-image: url("../assets/img/dice/textures/dice6.png"); }
-
-#tourism-image {
-    max-height: 300px;
-    object-fit: cover;
+.face.one {
+    transform: rotateY(0deg) translateZ(40px);
+    background-image: url("../assets/img/dice/textures/dice1.png");
 }
+
+.face.two {
+    transform: rotateY(180deg) translateZ(40px);
+    background-image: url("../assets/img/dice/textures/dice2.png");
+}
+
+.face.three {
+    transform: rotateY(90deg) translateZ(40px);
+    background-image: url("../assets/img/dice/textures/dice3.png");
+}
+
+.face.four {
+    transform: rotateY(-90deg) translateZ(40px);
+    background-image: url("../assets/img/dice/textures/dice4.png");
+}
+
+.face.five {
+    transform: rotateX(90deg) translateZ(40px);
+    background-image: url("../assets/img/dice/textures/dice5.png");
+}
+
+.face.six {
+    transform: rotateX(-90deg) translateZ(40px);
+    background-image: url("../assets/img/dice/textures/dice6.png");
+}
+
 
 .video-with-frame {
     position: relative;
@@ -253,9 +276,106 @@ body {
     pointer-events: none;
 }
 
-.tourism-image {
-    flex: 1 1 350px;
-    max-width: 100%;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+/* Overlay plein écran, centré */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    display: none; /* géré par ton JS */
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .7);
+    backdrop-filter: blur(2px) saturate(120%);
+    z-index: 9990;
+    opacity: 0;
+    transition: opacity .2s ease-out;
+}
+
+.modal-overlay.open {
+    display: flex; /* ton JS ajoute .open */
+    opacity: 1;
+}
+
+/* Carte centrale contenant le diaporama */
+.modal-content {
+    position: relative;
+    width: min(92vw, 1200px);
+    aspect-ratio: 16 / 9; /* cadre 16:9 garanti */
+    background: #000; /* bandes noires si besoin */
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, .55);
+    overflow: hidden;
+    transform: scale(.985);
+    transition: transform .22s ease-out, box-shadow .22s ease-out;
+}
+
+.modal-overlay.open .modal-content {
+    transform: scale(1);
+}
+
+/* Zone diaporama */
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+/* Image: toujours entière, centrée, sans recadrage */
+#story-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* pas de coupe */
+    object-position: center;
+    user-select: none;
+    -webkit-user-drag: none;
+    image-rendering: auto;
+    transition: opacity .25s ease; /* petit fondu lors du switch */
+}
+
+/* Respect des préférences d’animation */
+@media (prefers-reduced-motion: reduce) {
+    .modal-overlay, .modal-content, #story-image {
+        transition: none !important;
+    }
+}
+
+.dice-sign {
+    position: fixed;
+    bottom: 110px; /* juste au-dessus du dé (dé = 80px + 20px de marge) */
+    right: 20px;
+    max-width: 280px;
+    padding: 10px 14px;
+    border-radius: 10px;
+
+    /* Style lisible sur ton fond sombre */
+    background: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+
+    box-shadow: 0 8px 22px rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(2px) saturate(115%);
+
+    z-index: 1001; /* au-dessus du dé (z-index:1000) */
+    pointer-events: none; /* n'empêche pas de cliquer le dé */
+    transform: translateZ(0);
+    animation: diceSignFloat 3s ease-in-out infinite;
+}
+
+@keyframes diceSignFloat {
+    0%, 100% {
+        transform: translateY(0) translateZ(0);
+    }
+    50% {
+        transform: translateY(-3px) translateZ(0);
+    }
+}
+
+/* Respect des préférences d'animation */
+@media (prefers-reduced-motion: reduce) {
+    .dice-sign {
+        animation: none;
+    }
 }
