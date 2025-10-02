@@ -61,26 +61,26 @@
       "title": "Histoire 5",
       "audio": "assets/audio/anguille.mp3",
       "images": [
-        "assets/img/conte/mouakene/1.png",
-        "assets/img/conte/mouakene/2.png",
-        "assets/img/conte/mouakene/3.png",
-        "assets/img/conte/mouakene/4.png",
-        "assets/img/conte/mouakene/5.png",
-        "assets/img/conte/mouakene/6.png"
+        "assets/img/conte/anguille/1.png",
+        "assets/img/conte/anguille/2.png",
+        "assets/img/conte/anguille/3.png",
+        "assets/img/conte/anguille/4.png",
+        "assets/img/conte/anguille/5.png",
+        "assets/img/conte/anguille/6.png"
       ],
-      "intervalMs": 5000
+      "intervalMs": 9000
     },
     {
       "id": "histoire6",
       "title": "Histoire 6",
       "audio": "assets/audio/creationnc.mp3",
       "images": [
-        "assets/img/conte/mouakene/1.png",
-        "assets/img/conte/mouakene/2.png",
-        "assets/img/conte/mouakene/3.png",
-        "assets/img/conte/mouakene/4.png",
-        "assets/img/conte/mouakene/5.png",
-        "assets/img/conte/mouakene/6.png"
+        "assets/img/conte/creationnc/1.png",
+        "assets/img/conte/creationnc/2.png",
+        "assets/img/conte/creationnc/3.png",
+        "assets/img/conte/creationnc/4.png",
+        "assets/img/conte/creationnc/5.png",
+        "assets/img/conte/creationnc/6.png"
       ],
       "intervalMs": 5000
     }
